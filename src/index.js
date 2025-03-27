@@ -41,3 +41,10 @@ document.getElementById('bookingForm').addEventListener('submit', async function
         } else {
             displayText += '<p>Landing: Not specified</p>';
         }
+        if (data.data && data.data.length > 0) {
+            const flight = data.data[0];
+            displayText += `<p>Flight Number: ${flight.flight.number}</p>`;
+            displayText += `<p>Airline: ${flight.airline.name}</p>`;
+        } else {
+            displayText += '<p>No flights available</p>'; 
+        }
