@@ -30,3 +30,14 @@ document.getElementById('bookingForm').addEventListener('submit', async function
         const routeDisplay = document.getElementById('routeDisplay');
         let displayText = '<p>Flight Details:</p>';
         
+        if (departure) {
+            displayText += `<p>Takeoff: ${airports[departure]}</p>`;
+        } else {
+            displayText += '<p>Takeoff: Not specified</p>';
+        }
+        
+        if (destination) {
+            displayText += `<p>Landing: ${airports[destination]}</p>`;
+        } else {
+            displayText += '<p>Landing: Not specified</p>';
+        }
