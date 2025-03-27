@@ -26,4 +26,7 @@ document.getElementById('bookingForm').addEventListener('submit', async function
     try {
         const response = await fetch(apiurl);
         const data = await response.json();
-    }
+        
+        const routeDisplay = document.getElementById('routeDisplay');
+        let displayText = '<p>Flight Details:</p>';
+        
