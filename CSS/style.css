@@ -104,3 +104,6 @@ button:hover {
 p {
     color: #ffff00;
 }
+#routeDisplay p:nth-child(5) { 
+    font-weight: bold;
+}
