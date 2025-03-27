@@ -20,3 +20,10 @@ document.getElementById('bookingForm').addEventListener('submit', async function
         'ZAM': 'Zambia (ZAM)',
         'TOK': 'Tokyo (TOK)',
     };
+    const apiKey = 'e0c7352ba191cc30c6925cf17111281f';
+    const apiurl = 'https://api.aviationstack.com/v1/flights?access_key=e0c7352ba191cc30c6925cf17111281f';
+
+    try {
+        const response = await fetch(apiurl);
+        const data = await response.json();
+    }
