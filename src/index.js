@@ -11,3 +11,12 @@ document.getElementById('bookingForm').addEventListener('submit', async function
         alert('Departure and destination cannot be the same!');
         return false;
     }
+
+    const airports = {
+        'NYC': 'New York (JFK)',
+        'LAX': 'Los Angeles (LAX)',
+        'LHR': 'London (LHR)',
+        'HOK': 'Hokkaido, Japan (HOK)',
+        'ZAM': 'Zambia (ZAM)',
+        'TOK': 'Tokyo (TOK)',
+    };
