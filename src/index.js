@@ -51,3 +51,8 @@ document.getElementById('bookingForm').addEventListener('submit', async function
         
         displayText += `<p>Date: ${new Date(date).toLocaleDateString()}</p>`;
         displayText += '<p>Status: Booking Confirmed!</p>';
+
+        routeDisplay.innerHTML = displayText;
+    } catch (error) {
+        console.error('Error fetching API data:', error);
+    }
