@@ -48,3 +48,6 @@ document.getElementById('bookingForm').addEventListener('submit', async function
         } else {
             displayText += '<p>No flights available</p>'; 
         }
+        
+        displayText += `<p>Date: ${new Date(date).toLocaleDateString()}</p>`;
+        displayText += '<p>Status: Booking Confirmed!</p>';
