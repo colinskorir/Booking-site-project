@@ -59,3 +59,7 @@ document.getElementById('bookingForm').addEventListener('submit', async function
         routeDisplay.innerHTML = '<p>Error fetching flight data.</p>';
     }
 });
+
+const dateInput = document.getElementById('date');
+const today = new Date().toISOString().split('T')[0];
+dateInput.setAttribute('min', today);
