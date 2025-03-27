@@ -19,3 +19,18 @@ h1 {
     font-style: oblique;
 }
 
+h2 {
+    text-align: center;
+    color: #191970;
+    font-style: italic;
+}
+
+.booking-form, .flight-info {
+    background: #d8bfd8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-image: url(https://images.unsplash.com/photo-1520437358207-323b43b50729?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWlyY3JhZnR8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+}
