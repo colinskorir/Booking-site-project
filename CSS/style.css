@@ -34,3 +34,73 @@ h2 {
     background-image: url(https://images.unsplash.com/photo-1520437358207-323b43b50729?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWlyY3JhZnR8ZW58MHx8MHx8fDA%3D);
     background-size: cover;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    margin-top: 10px;
+    color: aqua;
+}
+
+select, input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #ba55d3;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#map {
+    position: relative;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.route-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    top: 50%;
+}
+
+.takeoff-point {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: green;
+}
+
+.landing-point {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+}
+.tel {
+    margin : 20px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+
+}
+
+p {
+    color: #ffff00;
+}
