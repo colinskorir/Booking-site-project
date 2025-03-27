@@ -55,4 +55,7 @@ document.getElementById('bookingForm').addEventListener('submit', async function
         routeDisplay.innerHTML = displayText;
     } catch (error) {
         console.error('Error fetching API data:', error);
+        const routeDisplay = document.getElementById('routeDisplay');
+        routeDisplay.innerHTML = '<p>Error fetching flight data.</p>';
     }
+});
